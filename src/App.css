@@ -1,38 +1,55 @@
-.App {
+.content-container {
+  margin: 50px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 3);
+  /* background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(145, 248, 252) 50%, rgb(98, 247, 239) 100%); */
+  background-color: whitesmoke;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: 'Squada One', sans-serif;
+}
+
+.comment {
   text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: black;
+  /* font-family: 'Titan One', cursive; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.room-booking-heading {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: black;
+  /* background-color: #2b2928; */
+  padding: 1rem;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.room-heading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.payment-methods-comment {
+  text-align: center;
+  font-size: 50px; /* Adjust font size as needed */
+  margin-top: 20px; /* Add space above the comment */
+  color: black; /* Change color if necessary */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+@media (max-width: 768px) {
+  .content-container {
+    margin: 24px; 
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
   }
 }

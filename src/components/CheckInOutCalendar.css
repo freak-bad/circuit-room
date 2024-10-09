@@ -1,0 +1,68 @@
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    gap: 30%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  
+  .calendar {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .date-picker {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .date-picker:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .content-container {
+    margin: 50px; 
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .availability-status {
+    background-color: rgba(240, 248, 255, 0.8); /* Transparent background */
+    padding: 10px;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .calendar-container {
+      gap: 10%; 
+    }
+  
+    .date-picker {
+      width: 50%;
+    }
+  }
+  

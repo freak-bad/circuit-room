@@ -1,0 +1,87 @@
+/* Basic styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  background-color: #2a2b2c;
+}
+
+.logo img {
+  width: 5vw;
+}
+
+.circuit-house-name {
+  color: whitesmoke;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2vh;
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.book-now {
+  background-color: whitesmoke;
+  font-weight: bolder;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-now:hover{
+  background-color: #2a2b2c;
+  color: whitesmoke;
+  border: solid thin ;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .logo img {
+    width: 15vw;
+  }
+
+  .circuit-house-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 87px;
+    right: -1px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .menu.open {
+    display: flex;
+  }
+}
