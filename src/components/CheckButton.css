@@ -6,9 +6,9 @@
   }
   
   .check-button {
-    background-color: black;
+    background-color: #76b5f5;
     font-weight: bolder;
-    color: whitesmoke;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -18,8 +18,8 @@
   }
   
   .check-button:hover {
-    background-color: whitesmoke;
-    color: black;
-    border: solid thin;
+    background-color: black;
+    color: whitesmoke;
+    /* border: solid thin; */
   }
   

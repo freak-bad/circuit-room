@@ -17,7 +17,7 @@
 }
 
 .book-now-button:hover {
-    background-color: whitesmoke;
+    background-color: #76b5f5;
     color: black;
-    border: solid thin black;
+    /* border: solid thin black; */
 }

@@ -22,16 +22,22 @@ const Footer = () => {
         <div className="ownership">
           <p>
             © Dantewada, Chhattisgarh This Website Is Designed And Developed By 
-            <a href="https://navgurukul.org/"> NavGurukul Dantewada </a>
+            <a href="https://navgurukul.org/" target="_blank" rel="noopener noreferrer"> NavGurukul Dantewada </a>
             And Managed By 
-            <a href="https://nic.in/"> National Informatics Centre </a>, 
+            <a href="https://nic.in/" target="_blank" rel="noopener noreferrer"> National Informatics Centre </a>, 
             Ministry Of Electronics & Information Technology, Government Of India.
           </p>
           <p>Last Updated: <strong>Oct 09, 2024</strong></p>
           <div className="logos">
-            <img src={ng} alt="NavGurukul Logo" />
-            <img src={nic} alt="NIC Logo" />
-            <img src={di} alt="Digital India Logo" />
+            <a href="https://www.navgurukul.org/" target="_blank" rel="noopener noreferrer">
+              <img src={ng} alt="NavGurukul Logo" />
+            </a>
+            <a href="https://www.nic.in/" target="_blank" rel="noopener noreferrer">
+              <img src={nic} alt="NIC Logo" />
+            </a>
+            <a href="https://www.digitalindia.gov.in/" target="_blank" rel="noopener noreferrer">
+              <img src={di} alt="Digital India Logo" />
+            </a>
           </div>
         </div>
         <div className="social-icons">
