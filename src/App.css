@@ -1,7 +1,6 @@
 .content-container {
-  margin: 50px; 
+  margin: 10px; 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 3);
-  /* background: linear-gradient(to bottom, #76b5f5 0%, rgb(219, 250, 252) 50%, whitesmoke 100%); */
   background-color: whitesmoke;
 }
 
@@ -49,7 +48,7 @@ body {
 
 @media (max-width: 768px) {
   .content-container {
-    margin: 24px; 
+    /* margin: 10px;  */
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
   }
 }

@@ -24,7 +24,10 @@ const RoomAvailabilityCalendar = () => {
 
   return (
     <div className="room-availability-calendar">
+       <p className='DotColor' style={{color:"green", marginLeft:"-80%"}}>Green Dot : Availabile Room</p>
+       <p className='DotCColor'  style={{color:"red", marginLeft:"-82%"}}>Red Dot : Booked Room</p>
       <h2 className="calendar-title">{`${month} ${year}`}</h2>
+     
       <div className="calendar-wrapper">
         <div className="calendar-table">
           <div className="room-header">Room No.</div>

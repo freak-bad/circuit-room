@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import logo from '../assets/logo.png'
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,11 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const navgigate = useNavigate()
+function handleBook(){
+  navgigate('/bookingform')
+}
 
   return (
     <header className="header">
@@ -24,7 +30,7 @@ const Header = () => {
       </div>
 
       <nav className={`menu ${isOpen ? 'open' : ''}`}>
-        <button className="book-now">Book Now</button>
+        <button onClick={handleBook} className="book-now">Book Now</button>
       </nav>
     </header>
   );

@@ -20,7 +20,7 @@
     gap: 10px;
     margin-top: 20px;
     width: 100%; /* Ensure the table takes full width */
-    min-width: 1000px; /* Set a minimum width so it scrolls on mobile */
+    min-width: 1000px; 
 }
 
 .room-header,
@@ -70,4 +70,12 @@
         width: 15px;
         height: 15px;
     }
+    .DotColor{
+  padding-left: 120px;
+
+    }
+
+    .DotCColor{
+        padding-left: 100px;
+          }
 }

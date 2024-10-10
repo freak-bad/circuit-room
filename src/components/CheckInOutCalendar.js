@@ -3,8 +3,11 @@ import CheckButton from './CheckButton';
 import './CheckInOutCalendar.css';
 
 const CheckInOutCalendar = () => {
-  const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
+  // const [checkIn, setCheckIn] = useState(new Date().toISOString());
+  const [checkIn, setCheckIn] = useState(new Date().toISOString().split('T')[0]);
+
+  // const [checkIn, setCheckIn] = useState(`${Date().Now}`);
+  const [checkOut, setCheckOut] = useState(new Date().toISOString().split('T')[0]);
   const [availability, setAvailability] = useState([]);
   const [showAvailability, setShowAvailability] = useState(false); // New state for visibility
 
